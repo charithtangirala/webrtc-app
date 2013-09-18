@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script src='/socket.io/socket.io.js'></script>
+		<script src="require.js" data-main="client/main.js"></script>
+	</head>
+	<body>
+		<h1>WebRTC Demo Application</h1>
+		<div id="mediaCenter" style="float: left; width: 48%; height: 90%;">
+			<h2>Remote Audio/Video</h2>
+			<video id="remoteVideo" width="100%" height="50%" controls autoplay></video><br/>
+			<h2>Local Audio/Video</h2>
+			<video id="localVideo" width="25%" height="25%" controls muted autoplay></video>
+		</div>
+		<div id="logCenter" style="float: right; width: 48%; height: 90%;">
+			<h2>Under the hood</h2>
+			<div id="logPane"></div>
+		</div>
+	</body>
+</html>
